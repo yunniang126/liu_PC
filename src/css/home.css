@@ -9,7 +9,7 @@
  */
 .box {
   margin-left: 10px;
-  color: #000;
+  color: #ccc;
   background-color: #ddd;
   font-size: 20px;
 }
@@ -87,5 +87,5 @@ h1, .title {
 }
 
 h1, .title {
-  color: #f00;
+  color: #999;
 }

@@ -19,7 +19,7 @@ $color:#ddd;
 // list类型：（js中的数组）
 $pd: 5px 10px 20px 30px;
 
-// map类型：（js中的对象）
+// list类型：（js中的对象）
 
 
 // 
@@ -69,7 +69,6 @@ $mainColor:#f60;
 	}
 }
 
- 
 
 .container{
 	width:800px;margin:0 auto;border:1px solid #f00;overflow:hidden;
@@ -80,7 +79,6 @@ $mainColor:#f60;
 		&:nth-child(2){background-color:#f60;}
 	}
 }
+
 .box{padding:10px;}
-
-h1{color:#f00;}
-
+h1{color:#999;}
