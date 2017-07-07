@@ -1,91 +1,703 @@
-@charset "UTF-8";
-/*
-	* 单行注释
-	* 多行注释
-	
-	* sass的变量：
-		* 一般使用在属性值中
-		* 在属性名中使用变量：# {$borderDirection}
- */
-.box {
-  margin-left: 10px;
-  color: #ccc;
-  background-color: #ddd;
-  font-size: 20px;
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-.box span {
-  color: #ddd;
+.header {
+  width: 1308px;
+  height: 124px;
+  background-color: blue;
 }
 
-.box p {
-  padding: 10px;
-  line-height: 2;
+.login {
+  width: 100%;
+  height: 40px;
+  background-color: #1F2021;
+  box-shadow: 0px 5px 5px #888;
 }
 
-h1, .title {
-  font-size: 24px;
-  margin: 10px 0;
-  border-bottom: 1px solid #ddd;
+.login .gui {
+  font-size: 16px;
+  color: #D5AD30;
+  line-height: 40px;
 }
 
-.mybox {
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
+.logo {
+  width: 100%;
+  height: 84px;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px #888;
 }
 
-.box {
-  margin: 10px;
+.logo .container {
+  position: relative;
+}
+
+.logo .islogo {
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 4px;
+  width: 255px;
+  height: 59px;
+  background: url("../img/sp.png") 0 0;
+}
+
+.logo .gaoduan {
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  left: 287px;
+  width: 187px;
+  height: 25px;
+  background: url("../img/sp.png") 0 -60px;
+}
+
+.logo .search {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 285px;
+  height: 32px;
+  background-color: red;
+}
+
+.logo .search input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.logo .search .searchBtn {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  width: 35px;
+  height: 32px;
+  background: url("../img/sp.png") 0 -85px;
+}
+
+.nav {
+  width: 100%;
+  height: 57px;
+  background-color: #232426;
+  box-shadow: 0px 5px 5px #888;
+}
+
+.nav ul li {
   float: left;
-  width: 100px;
-  height: 100px;
-  background-color: #f60;
 }
 
-.box:nth-child(1) {
-  background-color: #ff8533;
+.nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  height: 57px;
+  font-size: 14px;
+  color: #DEDEDE;
+  text-align: center;
+  padding: 0 13px;
+  line-height: 57px;
 }
 
-.box:nth-child(2) {
-  background-color: #ffa366;
+.nav ul .sort a {
+  display: inline-block;
+  width: 146px;
+  height: 57px;
+  background-color: #CF0101;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  box-sizing: border-box;
 }
 
-.box:nth-child(3) {
-  background-color: #ffc299;
+.nav ul li:hover a {
+  background-color: #ccc;
+  color: #000;
 }
 
-.box:nth-child(4) {
-  background-color: #ffe0cc;
+.nav ul .sort:hover a {
+  background-color: #8C0000;
+  color: #fff;
 }
 
-.box:nth-child(5) {
-  background-color: white;
+.banner {
+  width: 100%;
+  height: 520px;
+  background-color: #AEC1C8;
+  box-shadow: 0px 5px 10px #888;
 }
 
-.container {
-  width: 800px;
+.banner .container {
+  height: 520px;
+}
+
+.banner .container .lbt {
+  height: 520px;
+}
+
+.lbt ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.popular {
+  width: 100%;
+  height: 317px;
+}
+
+.popular .container {
+  position: relative;
+}
+
+.popular .pop_head a {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 301px;
+  height: 39px;
+  background: url("../img/sp.png") 0 -149px;
+}
+
+.popular .pop_main {
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: 100%;
+  height: 226px;
+  box-shadow: 0px 0px 20px #888;
+}
+
+.pop_main span:nth-child(1) a {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 485px;
+  height: 206px;
+  background: url("../img/pop_01.png") 0 0 no-repeat;
+}
+
+.pop_main span:nth-child(2) a {
+  position: absolute;
+  top: 10px;
+  right: 305px;
+  width: 195px;
+  height: 206px;
+  background: url("../img/pop_02.png") 0 0 no-repeat;
+}
+
+.pop_main span:nth-child(3) a {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 290px;
+  height: 206px;
+  background: url("../img/pop_03.png") 0 0 no-repeat;
+}
+
+.classic {
+  width: 100%;
+  height: 417px;
+  background-color: #E6E6E6;
+}
+
+.classic .container {
+  position: relative;
+}
+
+.classic .clc_head a {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 206px;
+  height: 38px;
+  background: url("../img/sp.png") 0 -188px;
+}
+
+.classic .clc_main {
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: 100%;
+  height: 327px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px #888;
+}
+
+.clc_main span:nth-child(1) a {
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 236px;
+  height: 149px;
+  background: url("../img/clc_01.png") 0 0 no-repeat;
+}
+
+.clc_main span:nth-child(2) a {
+  position: absolute;
+  bottom: 10px;
+  left: 9px;
+  width: 236px;
+  height: 149px;
+  background: url("../img/clc_02.png") 0 0 no-repeat;
+}
+
+.clc_main span:nth-child(3) a {
+  position: absolute;
+  top: 10px;
+  right: 250px;
+  width: 496px;
+  height: 306px;
+  background: url("../img/clc_03.png") 0 0 no-repeat;
+}
+
+.clc_main span:nth-child(4) a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 231px;
+  height: 306px;
+  background: url("../img/clc_04.png") 0 0 no-repeat;
+}
+
+.top {
+  width: 100%;
+  height: 480px;
+}
+
+.top .container {
+  position: relative;
+}
+
+.top .top_head a {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 246px;
+  height: 38px;
+  background: url("../img/sp.png") 0 -226px;
+}
+
+.top_main {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  height: 402px;
+  box-shadow: 0px 0px 20px #888;
+}
+
+.top_btn {
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  width: 980px;
+  height: 40px;
+}
+
+.top_btn li {
+  float: left;
+  width: 194px;
+  height: 40px;
+  background-color: #E0E0E0;
+  border-left: 2px solid #fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.top_btn li:hover {
+  background-color: #3A3A3A;
+  color: #fff;
+}
+
+.good_01 {
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+  width: 979px;
+  height: 250px;
+}
+
+.good_01 div {
+  float: left;
+  width: 195px;
+  height: 260px;
+  text-align: center;
+}
+
+.good_01 div a {
+  width: 195px;
+  height: 175px;
+}
+
+.good_01 div:nth-child(1) a {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../img/sp.png") -1145px 0 no-repeat;
+}
+
+.good_01 div:nth-child(2) a {
+  position: absolute;
+  top: 0px;
+  left: 195px;
+  background: url("../img/sp.png") -933px 0 no-repeat;
+}
+
+.good_01 div:nth-child(3) a {
+  position: absolute;
+  top: 0px;
+  left: 390px;
+  background: url("../img/sp.png") -724px 0 no-repeat;
+}
+
+.good_01 div:nth-child(4) a {
+  position: absolute;
+  top: 0px;
+  left: 585px;
+  background: url("../img/sp.png") -517px 0 no-repeat;
+}
+
+.good_01 div:nth-child(5) a {
+  position: absolute;
+  top: 0px;
+  left: 780px;
+  background: url("../img/sp.png") -315px 0 no-repeat;
+}
+
+.good_01 p {
+  position: absolute;
+}
+
+.good_01 .p1 {
+  left: 0;
+  bottom: 30px;
+}
+
+.good_01 .p2 {
+  left: 50px;
+  bottom: 0;
+  color: red;
+}
+
+.good_01 .p3 {
+  left: 200px;
+  bottom: 30px;
+}
+
+.good_01 .p4 {
+  left: 250px;
+  bottom: 0;
+  color: red;
+}
+
+.good_01 .p5 {
+  left: 400px;
+  bottom: 30px;
+}
+
+.good_01 .p6 {
+  left: 450px;
+  bottom: 0;
+  color: red;
+}
+
+.good_01 .p7 {
+  left: 600px;
+  bottom: 30px;
+}
+
+.good_01 .p8 {
+  left: 650px;
+  bottom: 0;
+  color: red;
+}
+
+.good_01 .p9 {
+  left: 800px;
+  bottom: 30px;
+}
+
+.good_01 .p0 {
+  left: 850px;
+  bottom: 0;
+  color: red;
+}
+
+.favorite {
+  width: 100%;
+  height: 446px;
+  background-color: #E6E6E6;
+}
+
+.fav_head a {
+  text-decoration: none;
+  color: #000;
+}
+
+.favorite .container {
+  background-color: #ccc;
+  position: relative;
+}
+
+.fav_head {
+  width: 337px;
+  height: 36px;
+  background: url("../img/sp.png") 0 -264px no-repeat;
+}
+
+.fav_head span {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.fav_main {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #888;
+}
+
+.fav_top {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 979px;
+  height: 236px;
+}
+
+.fav_top a {
+  position: absolute;
+  width: 180px;
+  height: 236px;
+}
+
+.fav_top span:nth-child(1) a {
+  top: 0;
+  left: 0;
+  background: url("../img/sp.png") -1348px 0 no-repeat;
+}
+
+.fav_top span:nth-child(2) a {
+  margin-left: 20px;
+  top: 0;
+  left: 180px;
+  background: url("../img/sp.png") -1539px 0 no-repeat;
+}
+
+.fav_top span:nth-child(3) a {
+  margin-left: 20px;
+  top: 0;
+  right: 400px;
+  background: url("../img/sp.png") -1724px 0 no-repeat;
+}
+
+.fav_top span:nth-child(4) a {
+  margin-left: 20px;
+  top: 0;
+  right: 200px;
+  background: url("../img/sp.png") -1910px 0 no-repeat;
+}
+
+.fav_top span:nth-child(5) a {
+  margin-left: 20px;
+  top: 0;
+  right: 0;
+  background: url("../img/sp.png") -1340px -250px no-repeat;
+}
+
+.fav_but {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  width: 973px;
+  height: 122px;
+  padding-left: 4px;
+}
+
+.fav_top span:hover a {
+  opacity: 0.5;
+}
+
+.fav_but > div a {
+  margin-right: 3px;
+  margin-bottom: 3px;
+  float: left;
+  width: 105px;
+  height: 57px;
+  background: url("../img/sp.png") -2150px 0px no-repeat;
+}
+
+.fav_but > div:hover a {
+  background: url("../img/sp.png") -2150px -60px no-repeat;
+}
+
+.three {
+  width: 100%;
+  height: 2362px;
+  background-color: #ccc;
+  padding-top: 67px;
+}
+
+.handbags {
   margin: 0 auto;
-  border: 1px solid #f00;
-  overflow: hidden;
+  width: 1000px;
+  height: 716px;
+  background-color: #fff;
+  padding: 0 11px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px #888;
 }
 
-.container > div {
-  float: left;
-  background-color: #efefef;
-  width: 33.33333%;
-  height: 300px;
+.handbags .bags_t {
+  width: 978px;
+  height: 88px;
+  position: relative;
 }
 
-.container > div:nth-child(2) {
-  background-color: #f60;
+.handbags .bags_t p {
+  display: inline-block;
+  text-decoration: none;
 }
 
-.box {
-  padding: 10px;
+.handbags .bags_t p a {
+  color: #757272;
+  text-decoration: none;
 }
 
-h1, .title {
-  color: #999;
+.handbags .bags_t p:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 40px;
+  background: url("../img/sp.png") 0px -313px no-repeat;
+}
+
+.handbags .bags_t p:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 38px;
+}
+
+.handbags .bags_t p:nth-child(2) span {
+  margin-left: 24px;
+}
+
+.handbags .bags_t p:nth-child(2) span:nth-child(6) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.handbags .bags_m {
+  width: 978px;
+  height: 380px;
+  background-color: #ccc;
+}
+
+.watches {
+  margin: 0 auto;
+  width: 1000px;
+  height: 716px;
+  background-color: #fff;
+  padding: 0 11px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px #888;
+  margin-top: 58px;
+}
+
+.watches .bags_t {
+  width: 978px;
+  height: 88px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.watches .bags_t p {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.watches .bags_t p a {
+  color: #757272;
+  text-decoration: none;
+}
+
+.watches .bags_t p:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 40px;
+  background: url("../img/sp.png") 0px -370px no-repeat;
+}
+
+.watches .bags_t p:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 38px;
+}
+
+.watches .bags_t p:nth-child(2) span {
+  margin-left: 24px;
+}
+
+.watches .bags_t p:nth-child(2) span:nth-child(6) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cosmetics {
+  margin: 0 auto;
+  width: 1000px;
+  height: 716px;
+  background-color: #fff;
+  padding: 0 11px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px #888;
+  margin-top: 58px;
+}
+
+.cosmetics .bags_t {
+  width: 978px;
+  height: 88px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.cosmetics .bags_t p {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cosmetics .bags_t p a {
+  color: #757272;
+  text-decoration: none;
+}
+
+.cosmetics .bags_t p:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 275px;
+  height: 40px;
+  background: url("../img/sp.png") 0px -430px no-repeat;
+}
+
+.cosmetics .bags_t p:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 38px;
+}
+
+.cosmetics .bags_t p:nth-child(2) span {
+  margin-left: 24px;
+}
+
+.cosmetics .bags_t p:nth-child(2) span:nth-child(6) {
+  font-size: 14px;
+  font-weight: bold;
 }
