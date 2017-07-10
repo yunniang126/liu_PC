@@ -1,6 +1,6 @@
 ;(function($){
 	// $.prototype.lxCarousel = function(options){
-	$.fn.lxCarousel = function(options){
+	$.fn.Carousel = function(options){
 
 		// 默认参数
 		var defaults = {
@@ -10,9 +10,10 @@
 			small:false,
 			buttons:true,//ok
 			page:false,//ok
-			duration:3000,//ok
+			duration:2000,//ok
 			index:0,//ok
-			type:'horizontal',//vertical,horizontal,fade,show
+			type:'fade',
+	//vertical(垂直),horizontal(水平),fade(淡入淡出),show(切换)
 			seamless:false
 		}
 
@@ -128,11 +129,31 @@
 				// 滚动显示每一张图片
 				var obj;
 
+				// 水平
 				if(opt.type === 'horizontal'){
 					obj = {left:-index*opt.width};
-				}else{
+				}
+				//1
+				// 淡入淡出
+				else if(opt.type==='fade'){
+					
+					$ul.find('li').css({position:'absolute',left:0,top:0});
+					$ul.children().eq(index).fadeIn().siblings().fadeOut();
+
+				}
+				// 切换
+				else if(opt.type==='show'){
+					$ul.children().eq(index).css({display:'block'}).siblings().css({display:'none'})
+					// $ul.find('img').attr('src','img/00'+index+'.jpg')
+				}
+				//1
+
+				//滚动
+				else{
 					obj = {top:-index*opt.height};
 				}
+
+
 
 				$ul.stop().animate(obj);
 

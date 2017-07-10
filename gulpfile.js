@@ -68,7 +68,14 @@ gulp.task('myserver',()=>{
 		// 	baseDir:['./src/']
 		// }
 		//1同步
-		server:'./src/',
+		// server:'./src/',
+
+		// 代理服务器
+		proxy:'http://localhost:10086',
+
+		// 端口
+		port:10087,
+		
 		//2刷新,html更改可变
 		files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']
 
