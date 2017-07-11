@@ -155,7 +155,7 @@
 
 	.icon-qq:before { content: "\e60a"; }
 
-	.icon-password:before { content: "\e82b"; }
+	.icon-password111:before { content: "\e82b"; }
 
 	.icon-shijian1:before { content: "\e616"; }
 
@@ -232,8 +232,8 @@
 	.mid_img{
 		width: 100%;
 		height: 477px;
-		background:url('../img/zhuce_bg.png');
-		background-size:110% 100%;
+		background:url('../img/deng_bg.png');
+		background-size:100% 100%;
 	}
 	.mid .kuang{
 		position: absolute;
@@ -248,13 +248,11 @@
 		padding-left: 58px;
 	}
 	//注册
+
 	//下方提示
 	.error{
-		// display: inline-block;
-		color:#f60;
-	}
-	.login .username{
-		// color:black;
+		display: inline-block;
+		color:#000;
 	}
 	.mail{
 		width: 333px;
@@ -263,91 +261,109 @@
 		border-bottom: 1px solid #ccc;
 		text-align: center;
 		line-height: 30px;
+		position: relative;
 	}
 	.mail span{
-		width: 120px;
-		height: 16px;
-		padding:0 10px;
-		color: #666;
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		height: 20px;
+		color: #999;
+		font-size: 16px;
 	}
-	.mail span:hover{
-		background-color: #000;
-		color:#fff;
-		border-radius: 5px 5px 0 0;
-	}
-	
 	.login p{
 		padding-left: 14px;
 		margin-top: 33px;
 	}
-
 	.login .input input{
 		width: 211px;
 		height: 30px;
 	}
-	//邮箱
+	//2邮箱
 	.login p:nth-child(2){
-		padding-left: 14px;
+		padding-left: 70px;
 		margin-top: 26px;
-
 	}
-	//验证邮箱
-	.username{
-		position: relative;
-	}
-	.y_mail{
-		position: absolute;
-		top: 88px;right: 23px;
-		display: inline-block;
-		width: 70px;
-		height: 25px;
-		text-align:center;
-		line-height: 25px;
-		font-size: 12px;
-		background-color: #fff;
-		border:1px solid #ccc; 
-
-	}
-	//mm
+	//3mm
 	.login p:nth-child(3){
-		padding-left: 36px;
+		padding-left: 70px;
+	}
+	//插入字体图标
+	.login p:nth-child(2) input{
+		// padding-left: 10px;
+		// box-sizing:border-box;
 
 	}
-	//mm2
-	.login p:nth-child(4){
-	}
+
 	//同意
-	.login p:nth-child(5){
-		padding-left: 60px;
+	.login p:nth-child(4){
+		padding-left: 70px;
+	}
+	.login p:nth-child(4)>a{
+		padding-left: 30px;
+		color:#BA8668;
+		text-decoration:underline;
 	}
 	//注册按钮
-	.login p:nth-child(6){
-		padding-left: 73px;
+	.login p:nth-child(5){
+		padding-left: 70px;
 	}
-	.login p:nth-child(6) button{
-		width: 210px;
+	.login p:nth-child(5) button{
+		width: 211px;
 		height: 30px;
 		background-color: #CF0101;
 		color:#fff;
 		border:0;
 	}
 	//已有帐号？
-	.login p:nth-child(7){
-		padding-left: 192px;
+	.login p:nth-child(6){
+		padding-left: 172px;
 	}
-	.login p:nth-child(7)>a{
+	.login p:nth-child(6)>a{
 		color:#BA8668;
 		text-decoration:underline;
 	}
 	//1000积分
-	.login p:nth-child(8){
+	.login p:nth-child(7){
 		border-top: 1px solid #ccc;
 		padding-top:25px;
-		padding-left: 62px;
+		padding-left: 55px;
 	}
-	.login p:nth-child(8)>a{
-		color:red;
+	.login .hezuo{
+		width: 331px;
+		height: 60px;
+		// background-color: #ccc;
+		margin-left: 55px;
+		position: relative;
+		margin-top: 10px;
 	}
+	.hezuo a{
+		display: inline-block;
+		position: absolute;
+		width: 82px;
+		height: 20px;
+	}
+	.hezuo a:nth-child(1){
+		left: 0;
+		top: 0;
+		background: url('../img/sp.png') -0px -3766px no-repeat;
+	}
+	.hezuo a:nth-child(2){
+		left: 84px;
+		top: 0;
+		background: url('../img/sp.png') -0px -3786px no-repeat;
+	}
+	.hezuo a:nth-child(3){
+		left: 168px;
+		top: 0;
+		background: url('../img/sp.png') -0px -3806px no-repeat;
+	}
+	.hezuo a:nth-child(4){
+		left: 0px;
+		top: 22px;
+		background: url('../img/sp.png') -0px -3826px no-repeat;
+	}
+
 
 
 

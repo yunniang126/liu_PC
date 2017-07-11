@@ -10,14 +10,19 @@ require.config({
 		ad_Carousel:'../lib/jquery.Carousel/jquery.ad_Carousel',
 		//注册
 		validate:'../lib/jquery-validate/jquery.validate',
+		//详情页轮播图
+		xq_Carousel:'../lib/jquery.Carousel/jquery.xq_Carousel',
 		//中文
 		validate_z:'../lib/jquery-validate/localization/messages_zh_TW'
+		
 	},
+	
 	shim:{
 		// gdszoom依赖jquery
 		gdszoom:['jquery'],
 		Carousel:['jquery'],
 		ad_Carousel:['jquery'],
+		xq_Carousel:['jquery'],
 		validate:['jquery'],
 		validate_zh:['jquery']
 	}

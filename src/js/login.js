@@ -2,7 +2,7 @@
 	首页js文件
  */
 require(['config'],function(){
-	require(['jquery','gdszoom','Carousel','ad_Carousel','list'],function(){
+	require(['jquery','gdszoom','Carousel','validate_z','validate','ad_Carousel','list'],function(){
 		console.log('首页');
 		// $('nav').css('color','#f00');
 		//首页轮播图
@@ -22,7 +22,24 @@ require(['config'],function(){
 			page:true,
 			autoPlay:false
 		});
-		
+
+		$('form').validate({
+            // 验证规则
+            rules:{
+                username:{
+                    required:true,
+                    rangelength:[6,12]
+                },
+                passowrd:{
+                    required:true,
+                    rangelength:[6,12]
+                },
+                passowrd02:{
+                    required:true,
+                    rangelength:[6,12]
+                }
+            },
+        })
 
 
 		

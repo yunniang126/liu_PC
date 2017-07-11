@@ -5,8 +5,6 @@
 	<title>登录</title>
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/login.css">
-	<!-- 轮播图插件 -->
-	<link rel="stylesheet" href="../lib/jquery.Carousel/jquery.Carousel.css">
 	<!-- require模块化 -->
 	<script src="../js/require.js" data-main="../js/login"></script>
 </head>
@@ -19,7 +17,7 @@
 		<div class="logo">
 			<div class="container">
 				<span class="islogo"></span>
-				<span class="huanying">欢迎登录</span>
+				<span class="huanying">欢迎登陆</span>
 				<span class="rexain"><i class="iconfont icon-dianhua"></i>  客服热线：400-400-4560</span>
 			</div>
 		</div>
@@ -27,12 +25,46 @@
 	<!-- 中间 -->
 	<div class="mid">
 		<div class="mid_img"></div>
-		<div class="kuang"></div>
+		<div class="kuang">
+			<!-- 注册 -->
+			<form class="login">
+				<!-- 1 -->
+				<p class="mail">
+				<span>登录第五大道</span>
+				</p>
+				<!-- 2帐号 -->
+		        <p class="input">
+		        <input type="text" name="username" id="username" placeholder="用户名/E-mail/手机号">
+		        <!-- <i class="iconfont icon-account"></i> -->
+		        </p>
+				<!-- 3密码 -->
+		        <p class="input">
+		        <input type="password" name="passowrd" id="passowrd" placeholder="6-12位密码">
+				<!-- <i class="iconfont icon-link"></i> -->
+		        </p>
+				<!-- 4 -->
+		        <p>
+		        	<input type="checkbox">记住我(下次自动登录)
+		        	<a href="#">忘记密码？</a>
+		        </p>
+				<!-- 5 btn-->
+		        <p><button type="submit">登录</button></p>
+				<!-- 6 -->
+		        <p>还没有帐号？<a href="#">立即注册</a></p>
+				<!-- 7 合作-->
+		        <p>合作网站帐号登录
+		        <p class="hezuo">
+		        	<a href="#"></a>
+		        	<a href="#"></a>
+		        	<a href="#"></a>
+		        	<a href="#"></a>
+		        </p>
+		       
+		        </p>
+		    </form>
+
+		</div>
 	</div>
-
-
-	
-
 
 
 

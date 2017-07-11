@@ -1,10 +1,10 @@
 ;(function($){
 	$.fn.gdsZoom = function(options){
 		var defaults = {
-			width:400,//大图宽度，高度
-			height:300,
+			width:430,//大图宽度，高度
+			height:430,
 			position:'right',//大图显示位置：left,bottom,top,right
-			gap:15//大图与小图的间距
+			gap:60//大图与小图的间距
 		}
 
 		// 扩展默认参数
@@ -15,7 +15,6 @@
 			var $small = $(this).addClass('gds-zoom');
 
 			var $smallImg = $small.children('img');
-
 
 			// 生成放大镜
 			var $minzoom = $('<span/>').addClass('minzoom');
@@ -65,8 +64,8 @@
 				// 改变放大镜的大小
 				// 与大图成比例
 				$minzoom.css({
-					width:opt.width/ratio,
-					height:opt.height/ratio
+					width:opt.width/ratio/2,
+					height:opt.height/ratio/2
 				});
 			}).on('mousemove',function(e){
 				var left = e.pageX - $small.offset().left - $minzoom.outerWidth()/2;
