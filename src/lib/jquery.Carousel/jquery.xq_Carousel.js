@@ -4,13 +4,13 @@
 
 		// 默认参数
 		var defaults = {
-			width:311,//ok
+			width:450,//ok
 			height:69,//ok
 			autoPlay:false,//ok
 			small:false,
 			buttons:true,//ok
 			page:false,//ok
-			duration:10000,//ok
+			duration:90000,//ok
 			index:0,//ok
 			type:'horizontal',
 	//vertical(垂直),horizontal(水平),fade(淡入淡出),show(切换)

@@ -1,6 +1,4 @@
-/*
-	首页js文件
- */
+//登录
 require(['config'],function(){
 	require(['jquery','gdszoom','Carousel','validate_z','validate','ad_Carousel','list'],function(){
 		//首页轮播图

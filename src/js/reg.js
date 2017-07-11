@@ -1,6 +1,4 @@
-/*
-	首页js文件
- */
+//注册
 require(['config'],function(){
 	require(['jquery','gdszoom','Carousel','validate_z','validate','ad_Carousel','list'],function(){
 		console.log('首页');

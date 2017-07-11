@@ -640,8 +640,8 @@ html, body {
 .d_l_ci {
   position: absolute;
   bottom: 46px;
-  left: 55px;
-  width: 430px;
+  left: 0px;
+  width: 530px;
   height: 69px;
   background-color: #ccc;
 }

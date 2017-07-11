@@ -1,6 +1,4 @@
-/*
-	首页js文件
- */
+//car
 require(['config'],function(){
 	require(['jquery','gdszoom','xq_Carousel','Carousel','ad_Carousel','list'],function(){
 		

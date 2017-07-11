@@ -1,6 +1,4 @@
-/*
-	首页js文件
- */
+//index
 require(['config'],function(){
 	require(['jquery','gdszoom','Carousel','ad_Carousel','list'],function(){
 		//首页轮播图

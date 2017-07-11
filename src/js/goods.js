@@ -1,6 +1,4 @@
-/*
-	首页js文件
- */
+//详情
 require(['config'],function(){
 	require(['jquery','gdszoom','xq_Carousel','Carousel','ad_Carousel','list'],function(){
 		
@@ -11,6 +9,7 @@ require(['config'],function(){
 			autoPlay:false
 		});
 
+		//放大镜
 		$('.d_l_zhu').gdsZoom({
 			// width:430,//大图宽度，高度
 			// height:430,

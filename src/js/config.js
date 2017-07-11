@@ -12,9 +12,10 @@ require.config({
 		validate:'../lib/jquery-validate/jquery.validate',
 		//详情页轮播图
 		xq_Carousel:'../lib/jquery.Carousel/jquery.xq_Carousel',
+		//小图轮播图
+		xluCarousel:'../lib/jquery.Carousel/jquery.xluCarousel',
 		//中文
 		validate_z:'../lib/jquery-validate/localization/messages_zh_TW'
-		
 	},
 	
 	shim:{
@@ -23,6 +24,7 @@ require.config({
 		Carousel:['jquery'],
 		ad_Carousel:['jquery'],
 		xq_Carousel:['jquery'],
+		xluCarousel:['jquery'],
 		validate:['jquery'],
 		validate_zh:['jquery']
 	}
