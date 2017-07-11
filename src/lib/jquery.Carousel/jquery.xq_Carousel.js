@@ -6,13 +6,13 @@
 		var defaults = {
 			width:311,//ok
 			height:69,//ok
-			autoPlay:false,//ok,自动播放
+			autoPlay:false,//ok
 			small:false,
-			buttons:false,//ok
-			page:false,//ok，页码
-			duration:0,//ok,间隔
-			index:0,//ok,索引
-			type:'fade',
+			buttons:true,//ok
+			page:false,//ok
+			duration:10000,//ok
+			index:0,//ok
+			type:'horizontal',
 	//vertical(垂直),horizontal(水平),fade(淡入淡出),show(切换)
 			seamless:false
 		}

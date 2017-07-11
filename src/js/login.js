@@ -3,8 +3,6 @@
  */
 require(['config'],function(){
 	require(['jquery','gdszoom','Carousel','validate_z','validate','ad_Carousel','list'],function(){
-		console.log('首页');
-		// $('nav').css('color','#f00');
 		//首页轮播图
 		$('.lbt').Carousel({
 			imgs:['img/banner/001.jpg','img/banner/002.jpg','img/banner/003.jpg','img/banner/004.jpg','img/banner/005.jpg'],
