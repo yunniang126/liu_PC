@@ -1,8 +1,45 @@
-//index
-require(['config'],function(){
-	require(['jquery','gdszoom','Carousel','ad_Carousel','list'],function(){
-		
-		// jQuery(function($){
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>list</title>
+	<style>
+		.datalist{border:1px solid #ddd;padding:15px;}
+		.datalist ul{
+			overflow: hidden;
+		}
+		.datalist li{
+			float: left;
+			padding:15px 5px;
+			border-bottom:1px dotted #ccc;
+			width: 300px;
+			height: 300px;
+		}
+		.datalist img{
+			width: 200px;
+			height: 200px;
+			background-size:100% 100%;
+		}
+		.datalist li h4{
+			margin:0;
+		}
+		.page span{
+			display:inline-block;
+			margin:5px;
+			width:40px;
+			line-height:1.8;
+			text-align: center;
+			background-color:#dfdfdf;
+			color:#666;
+		}
+		.page span.active{
+			background-color:#fc0;
+			color:#fff;
+		}
+	</style>
+	<script src='../lib/jquery3.1.1.js'></script>
+	<script>
+		jQuery(function($){
 			var pageNo = 1;
 			var lastPage = 1;
 			// jquery发起ajax请求
@@ -37,7 +74,7 @@ require(['config'],function(){
 				var scrollHeight = $('html').outerHeight();
 
 				// 如何判断滚动到最底部
-				if(scrollTop >= scrollHeight - winHeight - 400){
+				if(scrollTop >= scrollHeight - winHeight - 100){
 					if(pageNo == lastPage) return;
 					$.ajax({
 						url:'../api/list.php',
@@ -69,10 +106,11 @@ require(['config'],function(){
 				}
 
 			});
-		// })
-
-
-		
-	})
-})
-
+		})
+	</script>
+</head>
+<body>
+	<!-- <h1>足球解说</h1> -->
+	<div class="datalist"></div>
+</body>
+</html>
