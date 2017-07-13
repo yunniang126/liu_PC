@@ -442,6 +442,10 @@ html, body {
   text-decoration: underline;
 }
 
+.login p:nth-child(5) a {
+  color: #fff;
+}
+
 .login p:nth-child(5) {
   padding-left: 70px;
 }

@@ -304,7 +304,10 @@
 		color:#BA8668;
 		text-decoration:underline;
 	}
-	//注册按钮
+	//登录按钮
+	.login p:nth-child(5) a{
+		color:#fff;
+	}
 	.login p:nth-child(5){
 		padding-left: 70px;
 	}

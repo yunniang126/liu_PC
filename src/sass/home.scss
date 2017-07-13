@@ -532,7 +532,12 @@
 		height: 226px;
 		// background-color: blue;
 		box-shadow: 0px 0px 20px #888;
-
+	}
+	.popular .pop_main span:nth-child(1):hover a{
+		opacity: 0.7;
+	}
+	.popular .pop_main span:nth-child(2):hover a{
+		opacity: 0.7;
 	}
 	.pop_main span:nth-child(1) a{
 		position: absolute;
@@ -588,12 +593,20 @@
 		background-color: #FFFFFF;
 		box-shadow: 0px 0px 20px #888;
 	}
+	.clc_main span:nth-child(1):hover a{
+		opacity: 0.7;
+	}
+	.clc_main span:nth-child(2):hover a{
+		opacity: 0.7;
+	}
+	.clc_main span:nth-child(3):hover a{
+		opacity: 0.7;
+	}
 
 	.clc_main span:nth-child(1) a{
 		position: absolute;
 		top: 10px;
 		left: 9px;
-
 		width: 236px;
 		height: 149px;
 		background:url('../img/clc_01.png') 0 0 no-repeat;
@@ -693,9 +706,27 @@
 		text-align: center;
 
 	}
-	.good_01 div:nth-child(1){
-		// position: relative;
+	.good_01 div:nth-child(1):hover{
+		background-color: #ccc;
 	}
+
+	.good_01 div:nth-child(1):hover a{
+		opacity: 0.7;
+	}
+	.good_01 div:nth-child(2):hover a{
+		opacity: 0.7;
+	}
+	.good_01 div:nth-child(3):hover a{
+		opacity: 0.7;
+	}
+	.good_01 div:nth-child(4):hover a{
+		opacity: 0.7;
+	}
+	.good_01 div:nth-child(5):hover a{
+		opacity: 0.7;
+	}
+
+
 	.good_01 div a{
 		width: 195px;
 		height: 175px;
@@ -798,7 +829,6 @@
 	.favorite .container{
 		background-color: #ccc;
 		position: relative;
-
 	}
 	.fav_head{
 		width: 337px;
@@ -870,7 +900,8 @@
 		padding-left: 4px;
 	}
 	.fav_top span:hover a{
-		opacity: 0.5;
+		// opacity: 0.5;
+		top: -10px;
 	}
 	//下方小图
 	.fav_but>div a{
@@ -892,7 +923,33 @@
 		// background-color: #ccc;
 		padding-top: 67px;
 	}
-
+	.bags_b{
+		margin-top: 10px;
+	}
+	.bags_m p:hover a{
+		opacity: 0.5;
+		margin-top: -5px;
+	}
+	.bb_1:hover p:nth-child(1){
+		opacity: 0.5;
+		margin-top: -10px;
+	}
+	.bb_2:hover p:nth-child(1){
+		opacity: 0.5;
+		margin-top: -10px;
+	}
+	.bb_3:hover p:nth-child(1){
+		opacity: 0.5;
+		margin-top: -10px;
+	}
+	.bb_4:hover p:nth-child(1){
+		opacity: 0.5;
+		margin-top: -10px;
+	}
+	.bb_5:hover p:nth-child(1){
+		opacity: 0.5;
+		margin-top: -10px;
+	}
 //图1
 	.handbags{
 		margin: 0 auto;
@@ -1234,7 +1291,6 @@
 		// background-color: red;
 		position: relative;
 		float: left;
-
 	}
 	.cosmetics .bags_b>a p:nth-child(2){
 		width: 194px;
@@ -1265,7 +1321,6 @@
 	.cosmetics .bags_b .bb_5 p:nth-child(1){
 		background:url('../img/sp.png') -461px -2162px no-repeat;
 	}
-
 //黑banner
 	.banner_b{
 		width: 100%;
@@ -1277,7 +1332,6 @@
 		background: url('../img/banner_black.png') no-repeat;
 		box-shadow: 0px 0px 15px #888;
 	}
-
 //打折
 	.discount{
 		width: 100%;
@@ -1291,7 +1345,6 @@
 		box-shadow: 0px 0px 15px #888;
 		position: relative;
 	}
-
 //baby1
 	.baby_1{
 		width: 296px;
@@ -1301,6 +1354,16 @@
 		top: 33px;
 		left: 41px;
 	}
+	.baby_1:hover p{
+		opacity: 0.7;
+	}
+	.baby_2:hover p{
+		opacity: 0.7;
+	}	
+	.baby_3:hover p{
+		opacity: 0.7;
+	}		
+
 	.baby_1 a{
 		display: block;
 		text-decoration: none;
@@ -1342,7 +1405,6 @@
 		height: 21px;
 		background: url('../img/sp.png') -0px -2430px no-repeat;
 	}
-
 //baby2
 	.baby_2{
 		width: 296px;
@@ -1368,7 +1430,6 @@
 		font-size: 14px;
 		margin-left: 30px;
 	}
-	
 //baby3
 	.baby_3{
 		width: 296px;
@@ -1426,6 +1487,47 @@
 	.pro_nei>a:last-child{
 		margin-top: 10px;
 	}
+	//hover
+	.pro_01:hover{
+		opacity: 0.7;
+	}
+	.pro_02:hover{
+		opacity: 0.7;
+	}
+	.pro_03:hover{
+		opacity: 0.7;
+	}
+	.pro_04:hover{
+		opacity: 0.7;
+	}
+	.pro_05:hover{
+		opacity: 0.7;
+	}
+	.pro_06:hover{
+		opacity: 0.7;
+	}
+	.pro_07:hover{
+		opacity: 0.7;
+	}
+	.pro_08:hover{
+		opacity: 0.7;
+	}
+	.pro_09:hover{
+		opacity: 0.7;
+	}
+	.pro_10:hover{
+		opacity: 0.7;
+	}
+	.pro_11:hover{
+		opacity: 0.7;
+	}
+	.pro_12:hover{
+		opacity: 0.7;
+	}
+	.pro_13:hover{
+		opacity: 0.7;
+	}
+	//单
 	.pro_01{
 		display: block;
 		width: 486px;

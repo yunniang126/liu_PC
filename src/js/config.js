@@ -4,7 +4,9 @@ require.config({
 	// baseUrl:''
 	paths:{
 		jquery:'../lib/jquery3.1.1',
+		//放大镜
 		gdszoom:'../lib/jquery-gdsZoom/jquery.gdsZoom',
+		//轮播图
 		Carousel:'../lib/jquery.Carousel/jquery.Carousel',
 		//广告轮播图
 		ad_Carousel:'../lib/jquery.Carousel/jquery.ad_Carousel',

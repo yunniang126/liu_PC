@@ -17,27 +17,26 @@
 	// 连接数据库
 	$conn = new mysqli($servername,$username,$password,$database);
 
+
 	// 设置编码格式
 	$conn->set_charset('utf8');
 
-	// 接收前端传回的数据
+	// 用户名
 	$name = isset($_GET['name']) ? $_GET['name'] : '';
-	$password = isset($_GET['password']) ? $_GET['password'] : '123456';
-	$gender = isset($_GET['gender']) ? $_GET['gender'] : '';
-
-	// md5加密密码
-	$password = md5($password);
 
 	// 查找所有用户信息
-	$sql = "insert into user(name,password,gender) values('$name','$password','$gender')";
+	$sql = "select name,age,hobby,gender from user";
 
-	// echo $sql;
+	// 查找指定name信息
+	if($name){
+		$sql .= " where name='$name'";
+	}
 
 	// 查询数据库
 	$result = $conn->query($sql);
 
 	//使用查询结果	
-	if($result){
-		echo "数据写入成功";
-	}
+	$row = $result->fetch_all(MYSQLI_ASSOC);
+
+	echo json_encode($row,JSON_UNESCAPED_UNICODE);
 ?>

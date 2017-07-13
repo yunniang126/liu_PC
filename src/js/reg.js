@@ -38,6 +38,21 @@ require(['config'],function(){
                 }
             },
         })
+        
+		$('#btnReg').on('click',()=>{
+			$.ajax({
+				url:'../api/create_user.php',
+				data:{
+					name:$('#username').val(),
+					password:$('#password').val(),
+					gender:$('#gender').val()
+				},
+				success:(res)=>{
+					console.log(res);
+				}
+			});
+		});
+
 
 
 		

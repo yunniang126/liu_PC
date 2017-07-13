@@ -659,6 +659,14 @@ html, body {
   box-shadow: 0px 0px 20px #888;
 }
 
+.popular .pop_main span:nth-child(1):hover a {
+  opacity: 0.7;
+}
+
+.popular .pop_main span:nth-child(2):hover a {
+  opacity: 0.7;
+}
+
 .pop_main span:nth-child(1) a {
   position: absolute;
   top: 10px;
@@ -713,6 +721,18 @@ html, body {
   height: 327px;
   background-color: #FFFFFF;
   box-shadow: 0px 0px 20px #888;
+}
+
+.clc_main span:nth-child(1):hover a {
+  opacity: 0.7;
+}
+
+.clc_main span:nth-child(2):hover a {
+  opacity: 0.7;
+}
+
+.clc_main span:nth-child(3):hover a {
+  opacity: 0.7;
 }
 
 .clc_main span:nth-child(1) a {
@@ -814,6 +834,30 @@ html, body {
   width: 195px;
   height: 260px;
   text-align: center;
+}
+
+.good_01 div:nth-child(1):hover {
+  background-color: #ccc;
+}
+
+.good_01 div:nth-child(1):hover a {
+  opacity: 0.7;
+}
+
+.good_01 div:nth-child(2):hover a {
+  opacity: 0.7;
+}
+
+.good_01 div:nth-child(3):hover a {
+  opacity: 0.7;
+}
+
+.good_01 div:nth-child(4):hover a {
+  opacity: 0.7;
+}
+
+.good_01 div:nth-child(5):hover a {
+  opacity: 0.7;
 }
 
 .good_01 div a {
@@ -1009,7 +1053,7 @@ html, body {
 }
 
 .fav_top span:hover a {
-  opacity: 0.5;
+  top: -10px;
 }
 
 .fav_but > div a {
@@ -1029,6 +1073,40 @@ html, body {
   width: 100%;
   height: 2300px;
   padding-top: 67px;
+}
+
+.bags_b {
+  margin-top: 10px;
+}
+
+.bags_m p:hover a {
+  opacity: 0.5;
+  margin-top: -5px;
+}
+
+.bb_1:hover p:nth-child(1) {
+  opacity: 0.5;
+  margin-top: -10px;
+}
+
+.bb_2:hover p:nth-child(1) {
+  opacity: 0.5;
+  margin-top: -10px;
+}
+
+.bb_3:hover p:nth-child(1) {
+  opacity: 0.5;
+  margin-top: -10px;
+}
+
+.bb_4:hover p:nth-child(1) {
+  opacity: 0.5;
+  margin-top: -10px;
+}
+
+.bb_5:hover p:nth-child(1) {
+  opacity: 0.5;
+  margin-top: -10px;
 }
 
 .handbags {
@@ -1475,6 +1553,18 @@ html, body {
   left: 41px;
 }
 
+.baby_1:hover p {
+  opacity: 0.7;
+}
+
+.baby_2:hover p {
+  opacity: 0.7;
+}
+
+.baby_3:hover p {
+  opacity: 0.7;
+}
+
 .baby_1 a {
   display: block;
   text-decoration: none;
@@ -1603,6 +1693,58 @@ html, body {
 
 .pro_nei > a:last-child {
   margin-top: 10px;
+}
+
+.pro_01:hover {
+  opacity: 0.7;
+}
+
+.pro_02:hover {
+  opacity: 0.7;
+}
+
+.pro_03:hover {
+  opacity: 0.7;
+}
+
+.pro_04:hover {
+  opacity: 0.7;
+}
+
+.pro_05:hover {
+  opacity: 0.7;
+}
+
+.pro_06:hover {
+  opacity: 0.7;
+}
+
+.pro_07:hover {
+  opacity: 0.7;
+}
+
+.pro_08:hover {
+  opacity: 0.7;
+}
+
+.pro_09:hover {
+  opacity: 0.7;
+}
+
+.pro_10:hover {
+  opacity: 0.7;
+}
+
+.pro_11:hover {
+  opacity: 0.7;
+}
+
+.pro_12:hover {
+  opacity: 0.7;
+}
+
+.pro_13:hover {
+  opacity: 0.7;
 }
 
 .pro_01 {

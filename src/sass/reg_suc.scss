@@ -175,93 +175,21 @@
 
 	.header{
 		width: 100%;
-		height: 124px;
-		background-color: blue;
+		height: 92px;
+		// background-color: blue;
 	}
 
-//注册和登录,all
-	.login{
-		width: 100%;
-		height: 40px;
-		background-color: #1F2021;
-		box-shadow: 0px 5px 5px #888;
-
-	}
-	//贵宾热线
-	.login .gui{
-		display: inline-block;
-		font-size: 16px;
-		color:#FFE599;
-		line-height: 40px;
-	}
-	.login .container{
-		// background-color: red;
-		position: relative;
-	}
-	//右面注册-wu	
-	.login .wu{
-		float: right;
-		display: inline-block;
-		width: 525px;
-		height: 40px;
-		position: absolute;
-		left: 550px;
-	}
-	.wu li{
-		float: left;
-	}
-	.wu a{
-		display:inline-block;
-		height: 40px;
-		color:#fff;
-		text-decoration: none;
-		padding:0 15px;
-		line-height: 40px;
-		border-left: 1px solid #999;
-	}
-	.wu .zhuce,.wu .denglu{
-		border-left: 0;
-	}
-	.wu a:hover{
-		color:#1F2021;
-		background-color: #ccc;
-	}
-	.wu .phone0:hover .erwei00{
-		display: block;
-	}
-	//二维码
-	.wu .phone0{
-		position: relative;
-	}
-	.erwei00{
-		display: none;
-		position: absolute;
-		top: 45px;
-		right: -10px;
-		z-index: 111111;
-		width: 93px;
-		height: 93px;
-		background:url()no-repeat;
-		background: url('../img/er.jpg');
-		background-size:100% 100%;
-		border:5px solid #fff;
-		// box-shadow: 0px 5px 15px #111;
-	}
-
-//logo，搜索,all
+//logo,all
 	.logo{
 		width: 100%;
-		height: 84px;
+		height: 92px;
 		background-color: #fff;
-		box-shadow: 0px 5px 5px #888;
-
 	}
 	.logo .container{
 		// background-color: #ccc;
 		position: relative;
 	}
-
-	.logo .islogo{
+	.islogo{
 		display: inline-block;
 		position:absolute;
 		top: 11px;
@@ -269,82 +197,52 @@
 		width: 255px;
 		height: 59px;
 		background:url('../img/sp.png') 0 0;
+		border-right: 2px solid #ccc;
+		padding-right: 15px;
 	}
-	.logo .gaoduan{
+	.huanying{
 		display: inline-block;
 		position: absolute;
-		top: 32px;
+		top: 40px;
 		left: 287px;
 		width: 187px;
 		height: 25px;
-		background:url('../img/sp.png') 0 -60px;
+		color:#ccc;
+		font-size: 20px;
 	}
-	.logo .search{
+	.rexain{
 		display: inline-block;
 		position: absolute;
-		top: 20px;
-		right: 24px;
-		width: 285px;
-		height: 32px;
-		background-color: red;
-
-	}
-	.logo .search input{
-		width: 250px;
-		height: 30px;
-		border:1px solid black;
-	}
-	.logo .search .searchBtn{
-		display: inline-block;
-		position: absolute;
+		bottom: 0px;
 		right: 0px;
-		width: 35px;
-		height: 32px;
-		background:url('../img/sp.png') 0 -85px;
-	}
-	//点击搜索
-	.logo .search:hover .searchBtn{
-		// background:url('../img/sp.png') 0 -117px;
-
+		// width: 187px;
+		height: 25px;
+		color:#3F3F3F;
+		font-size: 14px;
 	}
 
-.car_top{
-	padding-top: 25px;
+//成功
+.scu{
 	width: 100%;
-	height: 45px;
+	height: 300px;
 	background-color: #fff;
-	padding-bottom: 33px;
-}
-.car_top .container{
-	// background-color: #ccc;
-	overflow: hidden;
-}
-.car_top .car_y{
-	float: right;
-	right: 0;
-	width: 720px;
-	height: 45px;
-	// background-color: #ccc;
-}
-.car_top .car_y li{
-	float: left;
-}
-
-.car_top .car_y li a{
-	text-decoration: none;
-	display: inline-block;
-	width: 175px;
-	height: 45px;
-	background-color: #ccc;
+	border-top: 2px solid #ccc;
 	text-align: center;
-	line-height: 45px;
-	font-size: 17px;
-	border-left: 3px solid #fff;
-	// border-radius: 0 55% 55% 0;
 }
-.car_top .car_y li:hover a{
-	background-color: #333;
+.scu p:nth-child(1){
+	font-size: 30px;
+	margin-top: 100px;
+}
+.scu p:nth-child(2) button a{
+	display: inline-block;
 	color:#fff;
+}
+.scu p:nth-child(2) button{
+	background-color: #C90002;
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	margin-top: 40px;
 }
 
 //footer
@@ -609,7 +507,6 @@
 		height: 9px;
 		background: url('../img/sp.png') -0px -3720px no-repeat;
 	}
-
 //右固定
 	.ad_r{
 		position: fixed;
@@ -741,7 +638,6 @@
 		margin:0;
 		list-style:none;
 	}
-
 //数据
 	.datas{
 		width: 100px;

@@ -1,14 +1,89 @@
-//列表
-require(['config'],function(){
-	require(['jquery','gdszoom','xq_Carousel','Carousel','ad_Carousel','list'],function(){
-		$.ajax({
-			url:'api/user.php',
-			success:res=>{
-				console.log(res);
+(function(){
+	let datalist = document.querySelector('#datalist');
+	let page = document.querySelector('#page');
+
+	let pageNo = 1;
+	let qty = 8;
+
+	let xhr = new XMLHttpRequest();
+
+	xhr.onreadystatechange = ()=>{
+		if(xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)){
+			var res = JSON.parse(xhr.responseText);
+			console.log(res);
+			// 生成分页
+			let pageLen = Math.ceil(res.total/res.qty);
+			page.innerHTML = '';
+			for(var i=1;i<=pageLen;i++){
+				var span = document.createElement('span');
+				span.innerHTML = i;
+				if(i===pageNo){
+					span.className = 'active';
+				}
+				page.appendChild(span);
 			}
-		})
 
-		
-	})
-})
+			let ul = document.createElement('ul');
 
+			ul.innerHTML = res.data.map(item=>{
+				return `
+					<li>
+						<h4>${item.name}</h4>
+						<img src="${item.img}">
+						<p>${item.xiang}</p>
+						<p>${item.jia}</p>
+					</li>
+				`
+			}).join('');
+
+			datalist.innerHTML = '';
+			datalist.appendChild(ul);
+		}
+	}
+
+	xhr.open('get','../api/list.php?pageNo='+pageNo + '&qty='+qty,true);
+	xhr.send();
+
+	// 分页切换
+	page.onclick = e=>{
+		if(e.target.tagName.toLowerCase() === 'span'){
+			pageNo = Number(e.target.innerText);
+
+			xhr.open('get','../api/list.php?pageNo='+pageNo + '&qty='+qty,true);
+			xhr.send();
+		}
+		xhr.onreadystatechange = ()=>{
+		if(xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)){
+			var res = JSON.parse(xhr.responseText);
+			console.log(res)
+			// 生成分页
+			let pageLen = Math.ceil(res.total/res.qty);
+			page.innerHTML = '';
+			for(var i=1;i<=pageLen;i++){
+				var span = document.createElement('span');
+				span.innerHTML = i;
+				if(i===pageNo){
+					span.className = 'active';
+				}
+				page.appendChild(span);
+			}
+
+			let ul = document.createElement('ul');
+
+			ul.innerHTML = res.data.map(item=>{
+				return `
+					<li>
+						<h4>${item.name}</h4>
+						<img src="${item.img}">
+						<p>${item.xiang}</p>
+						<p>${item.jia}</p>
+					</li>
+				`
+			}).join('');
+
+			datalist.innerHTML = '';
+			datalist.appendChild(ul);
+		}
+	}
+	}
+})();

@@ -9,6 +9,7 @@
 	
 	// 第一步
 	// 配置信息
+		//服务器和本地都是
 	$servername = 'localhost';
 	$username = 'root';
 	$password = '';
