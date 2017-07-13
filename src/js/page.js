@@ -3,7 +3,7 @@
 	let page = document.querySelector('#page');
 
 	let pageNo = 1;
-	let qty = 8;
+	let qty = 5;
 
 	let xhr = new XMLHttpRequest();
 

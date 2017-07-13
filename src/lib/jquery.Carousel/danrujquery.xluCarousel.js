@@ -20,7 +20,7 @@
 
 			var $self=$(ele);
 
-		$self.addClass('carousel')
+		$self.addClass('Carousel')
 		// 生成大图
 		var $wai=$('<div/>').addClass('wai')
 		var $ul = $('<ul/>');

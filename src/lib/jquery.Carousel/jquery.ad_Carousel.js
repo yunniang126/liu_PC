@@ -72,16 +72,12 @@
 				}
 				$page.appendTo($self);
 			}
-			
-
 
 			// 前后按钮
 			// if(opt.buttons){
 			// 	$('<div/>').addClass('prev').html('&lt;').appendTo($self);
 			// 	$('<div/>').addClass('next').html('&gt;').appendTo($self);
 			// }
-			
-
 
 			var timer;
 
@@ -129,23 +125,22 @@
 				// 滚动显示每一张图片
 				var obj;
 
-				// 水平
 				if(opt.type === 'horizontal'){
 					obj = {left:-index*opt.width};
 				}
 				//1
-				// 淡入淡出
-				else if(opt.type==='fade'){
+				// // 淡入淡出
+				// else if(opt.type==='fade'){
 					
-					$ul.find('li').css({position:'absolute',left:0,top:0});
-					$ul.children().eq(index).fadeIn().siblings().fadeOut();
+				// 	$ul.find('li').css({position:'absolute',left:0,top:0});
+				// 	$ul.children().eq(index).fadeIn().siblings().fadeOut();
 
-				}
-				// 切换
-				else if(opt.type==='show'){
-					$ul.children().eq(index).css({display:'block'}).siblings().css({display:'none'})
-					// $ul.find('img').attr('src','img/00'+index+'.jpg')
-				}
+				// }
+				// // 切换
+				// else if(opt.type==='show'){
+				// 	$ul.children().eq(index).css({display:'block'}).siblings().css({display:'none'})
+				// 	// $ul.find('img').attr('src','img/00'+index+'.jpg')
+				// }
 				//1
 
 				//滚动

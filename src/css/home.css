@@ -2163,6 +2163,34 @@ html, body {
   color: #fff;
 }
 
+.t01_0, .t02_0 {
+  display: none;
+  position: absolute;
+  right: 36px;
+  top: 0;
+  width: 100px;
+  height: 34px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.ad_r .t01:hover .t01_0 {
+  background-color: #ccc;
+  color: #fff;
+  display: block;
+  line-height: 36px;
+  text-align: center;
+}
+
+.ad_r .t02:hover .t02_0 {
+  background-color: #ccc;
+  color: #fff;
+  display: block;
+  line-height: 36px;
+  text-align: center;
+}
+
 .t01 {
   position: absolute;
   top: 0;
