@@ -254,7 +254,6 @@
 			height: 84px;
 			background-color: #fff;
 			box-shadow: 0px 5px 5px #888;
-
 		}
 		.logo .container{
 			// background-color: #ccc;
@@ -479,119 +478,147 @@
 		.erji>li:hover .y001s1{
 			display: block;
 		}
-
-//分页加载
-	#datalist{
-		border:1px solid #ddd;
-		padding:15px;
+//信息
+	.mid{
+		width: 100%;
+		height: 800px;
 	}
-	#datalist ul{
-		padding-left: 20px;
-		overflow: hidden;
-	}
-	#datalist li{
-		float: left;
-		padding:0px 5px;
-		padding-top: 45px;
-		border-bottom:1px dotted #ccc;
-	}
-	#datalist img{
-		width: 200px;
-		height: 200px;
-		background-size:100% 100%;
-		margin:0;
-	}
-	#datalist .bao{
-		text-decoration: none;
-		display: inline-block;
-		width: 230px;
-		height: 300px;
-	}
-	#datalist .bao:hover{
-		opacity: 0.7;
-		padding-top: -20px;
+	.mid .container{
 		// background-color: #ccc;
 	}
-	#datalist p{
-		// text-align: center;
-		padding-left: 35px;
+	.mid_t{
+		padding-left: 20px;
+		border-bottom: 2px solid #666;
 	}
-	#datalist li h4{
-		margin:0;
+	.mid_t,.icon-shouye{
+		height: 64px;
+		background-color: #fff;
+		font-size: 30px;
+		line-height: 80px;
 	}
-	#page{
-		padding-bottom: 50px;
+	.mid_m{
+		margin-top: 30px;
+		width: 1000px;
+		height: 690px;
+		// background-color: #ccc;
+		overflow: hidden;
 	}
-	#page span{
-		display:inline-block;
-		margin:5px;
-		width:40px;
-		line-height:1.8;
+	.mm_z{
+		float: left;
+		width: 156px;
+		height: 682px;
+		// background-color: #f60;
+	}
+	.dingdan{
+		width: 156px;
+		// height: 196px;
+		border:1px solid #ccc;
+		// padding-left: 10px;
+	}
+	.dingdan p:nth-child(1){
+		background-color: #E7D0B8;
+	}
+	.dingdan p:nth-child(6){
+		border:0;
+	}
+	.dingdan p a{
+		text-decoration: none;
+	}
+	.dingdan p{
+		line-height: 31px;
+		height: 32px;
+		border-bottom: 1px solid #ccc;
+		padding-left: 15px;
+	}
+	.dingdan p:hover a{
+		color:#D4C0A8;
+	}
+	.dingdan .ding00:hover{
+		background-color: #fff;
+	}
+	.mm_y{
+		float: right;
+		width: 825px;
+		height: 450px;
+	}
+	.my_t{
+		height: 29px;
+		border-bottom: 2px solid #ccc;
+
+	}
+	.my_t span:nth-child(1){
+		display: inline-block;
+		width: 90px;
+		height: 29px;
+		line-height: 29px;
+		font-size: 18px;
+		text-align: left;
+		border-bottom: 2px solid #CF0101;
+	}
+	.mm_x{
+		width: 825px;
+		height: 419px;
+		position: relative;
+		color:#ccc;
+	}
+	.mm_x .tou{
+		width: 105px;
+		height: 105px;
+		border:2px solid #ccc;
+		position: absolute;
+		left: 48px;
+		top: 49px;
+		border-radius: 50%;
+		line-height: 105px;
 		text-align: center;
-		background-color:#dfdfdf;
-		color:#666;
+		background-color: #fff;
 	}
-	#page span.active{
-		background-color:#fc0;
+	.icon-account{
+		font-size: 60px;
+	}
+	.mm_x a{
+		display: block;
+		position: absolute;
+		left: 77px;
+		top: 170px;
+	}
+	.m_r{
+		width: 625px;
+		height: 381px;
+		// background-color: #eee;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-left: 47px;
+		padding-top: 38px;
+	}
+	.m_r p{
+		color:#333;
+		padding-bottom: 25px;
+	}
+	.m_r p span:nth-child(1){
+		text-align: center;
+		// background-color: #ccc;
+		// width: 200px;
+	}
+	.m_r span{
+		background-color: #fff;
+		width: 300px;
+		height: 300px;
+		padding:0 15px;
+	}
+	.queren{
+		padding-left: 80px;
+	}
+	.m_r button{
+		padding:5px 15px;
+		margin-left: 150px;
+		border:0;
 		color:#fff;
+		background-color: #D3AA7D;
 	}
 
-//懒加载
-		.datalist li{
-			padding:15px 5px;
-			border-bottom:1px dotted #ccc;
-			width: 300px;
-			height: 300px;
-		}
-		.datalist img{
-			width: 200px;
-			height: 200px;
-			background-size:100% 100%;
-		}
-		.datalist li h4{
-			margin:0;
-		}
-		.page span{
-			display:inline-block;
-			margin:5px;
-			width:40px;
-			line-height:1.8;
-			text-align: center;
-			background-color:#dfdfdf;
-			color:#666;
-		}
-		.page span.active{
-			background-color:#fc0;
-			color:#fff;
-		}
-		.page_top{
-			width: 100%;
-			height: 180px;
-			// background-color: #ccc;
-		}
-.page_top p:nth-child(1){
-	width: 100%;
-	height: 100px;
-	line-height: 120px;
-	text-align: center;
-	font-size: 40px;
-	border-bottom: 5px solid #333;
-	font-weight: bold;
-}
-.page_top p:nth-child(2){
-	width: 100%;
-	height: 60px;
-	line-height: 18px;
-	text-align: center;
-	font-size: 16px;
-}
-.page_top p:nth-child(2) span{
-	width: 120px;
-	height: 30px;
-	background-color: #333;
-	color:#fff;
-	margin:-5px;
-}
+
 
 //2
 	//footer
@@ -1012,7 +1039,6 @@
 
 	
 	
-
 
 
 

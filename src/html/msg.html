@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>列表页</title>
+	<title>个人信息</title>
 	<link rel="stylesheet" href="../css/base.css">
-	<link rel="stylesheet" href="../css/page2.css">
+	<link rel="stylesheet" href="../css/msg.css">
 	<!-- require模块化 -->
-	<script src="../js/require.js" data-main="../js/page2"></script>
+	<script src="../js/require.js" data-main="../js/msg"></script>
 
 </head>
 <body>
@@ -376,19 +376,102 @@
 		</div>
 	</div>
 	
-	<!-- 商品列表 -->
-	<div class="page">
+	<!-- my five -->
+	<div class="mid">
 		<div class="container">
-			<div class="page_top">
-				<p>NEW ARRIVAL</p>
-				<p><span>新品上市</span></p>
+			<div class="mid_t">
+				<p><i class="iconfont icon-shouye"></i>
+				<span>我的第五大道</span>
+				<span>MY 5LUX</span>
+				</p>
 			</div>
-			<!-- 分页 -->
-			<div id="datalist">
+			<div class="mid_m">
+				<div class="mm_z">
+					<div class="dingdan">
+						<p class="ding00"><a href="#">订单中心</a></p>
+
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>我的订单</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>已购商品</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>我的评论</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>我的收藏</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>我的退换货</a></p>
+					</div>
+					<div class="dingdan">
+						<p class="ding00"><a href="#">我的账户</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>个人信息</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>收货地址</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>修改密码</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>账户安全</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>我的礼券</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>我的礼品卡</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>账户余额</a></p>
+					</div>
+					<div class="dingdan">
+						<p class="ding00"><a href="#">会员中心</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>我的积分</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>积分兑换</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>会员等级</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>年底返现</a></p>
+						<p><a href="#"><i class="iconfont icon-gouwu"></i>邀请好友</a></p>
+					</div>
+				</div>
+				<div class="mm_y">
+					<div class="my_t">
+						<span>个人信息</span>
+						<span>完善个人信息，送500积分、20现金券</span>
+					</div>
+					<div class="mm_x">
+						<div class="tou"><i class="iconfont icon-account"></i></div>
+						<span><a href="#">修改头像</a></span>
+						<div class="m_r">
+							<p>
+							<span>用户名:</span><span>18109473610</span>
+							</p>
+							<p>
+							<span>姓名：</span><span><input type="text"></span>
+							</p>
+							<p>
+							<span>性别：</span><span><input type="checkbox" checked="checked"> 男 <input type="checkbox"> 女</span>
+							</p>
+							<p>
+							<span>邮箱：</span><span><input type="text">邮箱验证</span>
+							</p>
+							<p class="queren">请您准确填写邮箱地址，以便获取会员四项优惠资讯！</p>
+							<p>
+							<span>手机号：</span><span>18109473610</span>
+							</p>
+							<p>
+							<span>出生日期：</span>
+							<span><select id="year" >
+								<option value="1">1960</option>
+							</select></span>
+							<span><select id="month" >
+								<option value="1">01</option>
+							</select></span>
+							<span><select id="day" >
+								<option value="1">01</option>
+							</select></span>
+							</p>
+							<p>
+							<span>收入:</span><span><select id="shou" >
+								<option>请选择...</option>
+							</select>
+							</span>
+							</p>
+							<p>
+							<span>职业:</span><span><select id="zhi" >
+								<option>请选择...</option>
+							</select>
+							</span>
+							</p>
+							<button>请选择</button>
+						</div>
+					</div>
+					
+				</div>
+				
 			</div>
-			<div id="page"></div>
-			<!-- 懒加载 -->
-			<!-- <div class="datalist"></div> -->
+			
 		</div>
 	</div>
 
@@ -470,7 +553,6 @@
 		</div>
 	</div>
 	
-	
 	<div class="datas">
 		<p></p>
 	</div>
@@ -518,7 +600,6 @@
 	</div>
 
 </div>
-<!-- 分页 -->
-<script src="../js/page.js"></script>	
+
 </body>
 </html>

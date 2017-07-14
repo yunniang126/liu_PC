@@ -8,11 +8,9 @@
 	let xhr = new XMLHttpRequest();
 
 	xhr.onreadystatechange = ()=>{
-		console.log(666);
-		
 		if(xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)){
 			var res = JSON.parse(xhr.responseText);
-			console.log(res);
+			
 			// 生成分页
 			let pageLen = Math.ceil(res.total/res.qty);
 			page.innerHTML = '';
@@ -75,7 +73,7 @@
 			xhr.open('get','../api/list.php?pageNo='+pageNo + '&qty='+qty,true);
 			xhr.send();
 		}
-			xhr.onreadystatechange = ()=>{
+		xhr.onreadystatechange = ()=>{
 			if(xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)){
 				var res = JSON.parse(xhr.responseText);
 				console.log(res)

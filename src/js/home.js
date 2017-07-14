@@ -14,6 +14,23 @@ require(['config'],function(){
 			page:true,
 			autoPlay:false
 		});
+		var $tab = $('.tab');
+		$content = $tab.find('.content');
+		$title = $tab.find('.header').children();
+		
+		// 隐藏除第一张以外的图片
+		$content.slice(1).hide();
+		
+		// 给第一个tab高亮
+		$title.eq(0).addClass('active');
+        console.log($title.eq(0));
+
+		$tab.on('mouseenter','li',function(){
+			var idx = $(this).index();
+
+			$(this).addClass('active').siblings().removeClass('active');
+			$content.eq(idx).show().siblings('.content').hide();
+		})
 		
 
 

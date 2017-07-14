@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-07-13 11:14:21
+Date: 2017-07-13 17:59:56
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,15 +32,15 @@ CREATE TABLE `goods` (
 -- ----------------------------
 -- Records of goods
 -- ----------------------------
-INSERT INTO `goods` VALUES ('1', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
-INSERT INTO `goods` VALUES ('2', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('1', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd03.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('2', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd04.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
 INSERT INTO `goods` VALUES ('3', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
-INSERT INTO `goods` VALUES ('4', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
-INSERT INTO `goods` VALUES ('5', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
-INSERT INTO `goods` VALUES ('6', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
-INSERT INTO `goods` VALUES ('7', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
-INSERT INTO `goods` VALUES ('8', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
-INSERT INTO `goods` VALUES ('9', 'Hermes 爱马仕', '../img/ddd04.png', '../img/gg00.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('4', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd06.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('5', 'Hermes 爱马仕', '../img/ddd04.png', '../img/bb05.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('6', 'Hermes 爱马仕', '../img/ddd04.png', '../img/bb04.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('7', 'Hermes 爱马仕', '../img/ddd04.png', '../img/bb03.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('8', 'Hermes 爱马仕', '../img/ddd04.png', '../img/bb02.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
+INSERT INTO `goods` VALUES ('9', 'Hermes 爱马仕', '../img/ddd04.png', '../img/bb01.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
 INSERT INTO `goods` VALUES ('10', 'Hermes 爱马仕', '../img/ddd04.png', '../img/gg00.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
 INSERT INTO `goods` VALUES ('11', 'Hermes 爱马仕', '../img/ddd04.png', '../img/ddd04.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
 INSERT INTO `goods` VALUES ('12', 'Hermes 爱马仕', '../img/ddd04.png', '../img/gg00.png', 'Picotin Lock 咖啡色', 'RMB：26000.00');
